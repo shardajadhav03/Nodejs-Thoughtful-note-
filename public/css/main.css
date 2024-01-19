@@ -37,9 +37,13 @@ h1,h2,h3,h4,h5{
     column-gap: 5px;
 }
 .image{
-    max-width: 95%;
-    max-height: 100%;
+    /* max-width: 95%;
+    max-height: 100%; */
     border-radius: 25% 0 0 0;
+}
+img{
+  /* height: 8%; */
+  width: 90%;
 }
 .content{
     max-width: 100%;
@@ -53,7 +57,16 @@ h1,h2,h3,h4,h5{
 .notes{
     --bs-gutter-x: 0;
 }
-
+@media only screen and (max-width: 768px) {
+  .frontText {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .photo{
+    margin: 25px
+  }
+}
 
 /* Import Google Font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
